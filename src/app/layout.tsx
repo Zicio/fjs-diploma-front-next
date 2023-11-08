@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./globals.css";
 import Header from "./ui/header/Header";
+import Navbar from "./ui/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Farada",
@@ -17,7 +18,12 @@ export default function RootLayout({
     <html lang="ru" className={inter.className}>
       <body>
         <Header />
-        <div className="mx-36">{children}</div>
+        <div className="mx-10 mt-12 grid grid-cols-[1fr_7fr] gap-10">
+          <Navbar />
+          <main className="container">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
