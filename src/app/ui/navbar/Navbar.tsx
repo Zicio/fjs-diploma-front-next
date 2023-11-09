@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="container">
+    <div className="p-default border border-gray_lite rounded-default bg-gray">
       Navbar
     </div>
   );

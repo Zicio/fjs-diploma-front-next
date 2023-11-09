@@ -10,7 +10,3 @@ body {
   background-color: black;
   color: whitesmoke;
 }
-
-.container {
-  @apply p-2 border border-gray-700 rounded-md bg-gray-800;
-}

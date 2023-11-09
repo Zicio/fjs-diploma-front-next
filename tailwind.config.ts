@@ -9,8 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        container: "#212837"
+        gray: "#212837",
+        gray_lite: "#394051",
+        yellow: "#faf48b",
       },
+      padding: {
+        default: "8px",
+      },
+      borderRadius: {
+        default: "6px"
+      }
     },
   },
   plugins: [],

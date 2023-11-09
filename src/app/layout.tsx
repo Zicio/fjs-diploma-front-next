@@ -20,7 +20,7 @@ export default function RootLayout({
         <Header />
         <div className="mx-10 mt-12 grid grid-cols-[1fr_7fr] gap-10">
           <Navbar />
-          <main className="container">
+          <main className="p-default border border-gray_lite rounded-default bg-gray">
             {children}
           </main>
         </div>

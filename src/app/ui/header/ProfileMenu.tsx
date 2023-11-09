@@ -12,15 +12,15 @@ const menuItems: menuItem[] = [
 
 const ProfileMenu = () => {
   return (
-    <ul className="absolute right-5 top-5 z-10 bg-gray-800 p-2 border border-gray-700 rounded-md text-left text-xs">
+    <ul className="absolute right-5 top-5 z-10 bg-gray p-2 border border-gray_lite rounded-default text-left text-xs">
       {menuItems.map((item) => (
         <li
           key={item.url}
-          className="border-b-2 border-gray-700 rounded-sm last:border-0 hover:bg-yellow-300 hover:text-black"
+          className="border-b border-gray_lite last:border-0 hover:bg-yellow hover:text-black"
         >
           <Link
             href={`/auth/${item.url}`}
-            className="inline-block w-full h-full p-2"
+            className="inline-block w-full h-full p-default"
           >
             {item.text}
           </Link>
