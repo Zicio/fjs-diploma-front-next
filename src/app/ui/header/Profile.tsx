@@ -7,7 +7,7 @@ const Profile: FC<{ children: ReactNode }> = ({ children }) => {
   const { ref, isActive, setIsActive } = useOutsideClick(false);
   return (
     <button
-      className="relative z-0 p-1 rounded-full active:bg-gray_lite active:scale-110"
+      className="relative z-0 p-sm rounded-full active:bg-gray_lite active:scale-110"
       type="button"
       onClick={() => setIsActive(!isActive)}
     >

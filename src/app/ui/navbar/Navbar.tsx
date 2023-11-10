@@ -1,8 +1,12 @@
+import NavList from "./NavList";
+
 const Navbar = () => {
   return (
-    <div className="p-default border border-gray_lite rounded-default bg-gray">
-      Navbar
-    </div>
+    <nav className="p-default border border-gray_lite rounded-default bg-gray">
+      <ul>
+        <NavList />
+      </ul>
+    </nav>
   );
 };
 export default Navbar;

@@ -10,7 +10,7 @@ const Logo = () => {
         <Image src={logo} alt="Логотип" />
       </Link>
       <h1
-        className={`${lusitana.className} text-yellow-200 text-2xl border-l-2 border-gray-700 pl-4`}
+        className={`${lusitana.className} text-yellow text-2xl border-l-2 border-gray_lite pl-4`}
       >
         Farada
       </h1>

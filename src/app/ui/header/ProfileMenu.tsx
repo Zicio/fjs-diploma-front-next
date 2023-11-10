@@ -1,18 +1,14 @@
+import { linkItem } from "@/app/types/types";
 import Link from "next/link";
 
-type menuItem = {
-  url: string;
-  text: string;
-};
-
-const menuItems: menuItem[] = [
+const menuItems: linkItem[] = [
   { url: "signIn", text: "Войти" },
   { url: "signUp", text: "Зарегистрироваться" },
 ];
 
 const ProfileMenu = () => {
   return (
-    <ul className="absolute right-5 top-5 z-10 bg-gray p-2 border border-gray_lite rounded-default text-left text-xs">
+    <ul className="absolute right-5 top-5 z-10 bg-gray p-default border border-gray_lite rounded-default text-left text-sm">
       {menuItems.map((item) => (
         <li
           key={item.url}
@@ -20,7 +16,7 @@ const ProfileMenu = () => {
         >
           <Link
             href={`/auth/${item.url}`}
-            className="inline-block w-full h-full p-default"
+            className="inline-block w-full h-full p-sm"
           >
             {item.text}
           </Link>
